@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoro-Mapbox</title>
     <link rel="stylesheet" href="./css/base.css" />
+    <script src="/js/tokenmapbox.js"></script>
   </head>
   <body>
     <h1>Zoro Mapbox</h1>
@@ -15,12 +16,12 @@
       rel="stylesheet"
     />
     <script>
-      mapboxgl.accessToken = "YOUR_ACCESS_TOKEN";
+      mapboxgl.accessToken = token_mapbox;
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
-        center: [longitude, latitude], // Thay đổi longitude và latitude tùy theo vị trí mong muốn
-        zoom: 12, // Thay đổi mức zoom tùy theo mong muốn
+        center: [108.22760806240348, 16.06130596951281], // Thay đổi longitude và latitude tùy theo vị trí mong muốn
+        zoom: 10, // Thay đổi mức zoom tùy theo mong muốn
       });
     </script>
   </body>
