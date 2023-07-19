@@ -5,8 +5,28 @@
     "title": "A selection of zoro forms created using HTML and CSS.<br/>Choose from Straw Hat zoro, Gear Fourth zoro, Boundman zoro, Snakeman zoro, Tankman zoro.<br/>Each form represents a unique aspect of zoro's character and abilities.<br/>The radio buttons allow users to make a single selection, indicating their preferred zoro form.<br/>The design is visually appealing and responsive, ensuring a smooth user experience.",
     "bg_page": "bg_02.gif",
     "character": "pic_bg_02.gif",
-    "title_form": "Chose zoro Forms",
-    "bg_form": "pic_zoro_02.gif",
-    "label_name": "zoro Forms"
+    "markers": [
+      {
+        "lat": "108.22760806240348",
+        "lon": "16.06130596951281",
+        "name": "indaime",
+        "img": "",
+        "desc": "sword indaime kintesu"
+      },
+      {
+        "lat": "108.23760806240348",
+        "lon": "16.07130596951281",
+        "name": "sandaime",
+        "img": "",
+        "desc": "sword sandaime kintesu"
+      },
+      {
+        "lat": "108.21760806240348",
+        "lon": "16.05130596951281",
+        "name": "jidaime",
+        "img": "",
+        "desc": "sword jidaime kintesu"
+      }
+    ]
   }
 }
