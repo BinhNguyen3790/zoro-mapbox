@@ -21,8 +21,19 @@
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
         center: [108.22760806240348, 16.06130596951281], // Thay đổi longitude và latitude tùy theo vị trí mong muốn
-        zoom: 10, // Thay đổi mức zoom tùy theo mong muốn
+        zoom: 13, // Thay đổi mức zoom tùy theo mong muốn
       });
+      fetch("data.json")
+        .then((res) => res.json())
+        .then((json) => {
+          var markers = json.data.markers;
+          markers.forEach(function (marker) {
+            console.log(marker);
+            var marker = new mapboxgl.Marker()
+              .setLngLat([marker.lat, marker.lon])
+              .addTo(map);
+          });
+        });
     </script>
   </body>
 </html>
