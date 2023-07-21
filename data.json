@@ -11,21 +11,24 @@
         "lon": "16.06130596951281",
         "name": "indaime",
         "img": "",
-        "desc": "sword indaime kintesu"
+        "desc": "sword indaime kintesu",
+        "type": 1
       },
       {
         "lat": "108.23760806240348",
         "lon": "16.07130596951281",
         "name": "sandaime",
         "img": "",
-        "desc": "sword sandaime kintesu"
+        "desc": "sword sandaime kintesu",
+        "type": 2
       },
       {
         "lat": "108.21760806240348",
         "lon": "16.05930596951281",
         "name": "jidaime",
         "img": "",
-        "desc": "sword jidaime kintesu"
+        "desc": "sword jidaime kintesu",
+        "type": 3
       }
     ]
   }
