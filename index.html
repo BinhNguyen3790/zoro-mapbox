@@ -28,8 +28,10 @@
         .then((json) => {
           var markers = json.data.markers;
           markers.forEach(function (marker) {
+            var customIcon = document.createElement("div");
+            customIcon.className = "mapboxgl-marker marker-2";
             console.log(marker);
-            var marker = new mapboxgl.Marker()
+            var marker = new mapboxgl.Marker({ element: customIcon })
               .setLngLat([marker.lat, marker.lon])
               .addTo(map);
           });
