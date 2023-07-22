@@ -7,24 +7,24 @@
     "character": "pic_bg_02.gif",
     "markers": [
       {
-        "lat": "108.22760806240348",
-        "lon": "16.06130596951281",
+        "lon": "108.22760806240348",
+        "lat": "16.06130596951281",
         "name": "indaime",
         "img": "",
         "desc": "sword indaime kintesu",
         "type": 1
       },
       {
-        "lat": "108.23760806240348",
-        "lon": "16.07130596951281",
+        "lon": "108.23760806240348",
+        "lat": "16.07130596951281",
         "name": "sandaime",
         "img": "",
         "desc": "sword sandaime kintesu",
-        "type": 2
+        "type": 4
       },
       {
-        "lat": "108.21760806240348",
-        "lon": "16.05930596951281",
+        "lon": "108.21760806240348",
+        "lat": "16.05930596951281",
         "name": "jidaime",
         "img": "",
         "desc": "sword jidaime kintesu",
