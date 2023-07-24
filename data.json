@@ -10,7 +10,7 @@
         "lon": "108.22760806240348",
         "lat": "16.06130596951281",
         "name": "indaime",
-        "img": "",
+        "img": "zoro_01",
         "desc": "sword indaime kintesu",
         "type": 1
       },
@@ -18,7 +18,7 @@
         "lon": "108.23760806240348",
         "lat": "16.07130596951281",
         "name": "sandaime",
-        "img": "",
+        "img": "zoro_04",
         "desc": "sword sandaime kintesu",
         "type": 4
       },
@@ -26,7 +26,7 @@
         "lon": "108.21760806240348",
         "lat": "16.05930596951281",
         "name": "jidaime",
-        "img": "",
+        "img": "zoro_03",
         "desc": "sword jidaime kintesu",
         "type": 3
       }

@@ -8,8 +8,11 @@
     <script src="/js/tokenmapbox.js"></script>
   </head>
   <body>
-    <h1>Zoro Mapbox</h1>
-    <div id="map"></div>
+    <div class="container">
+      <h1 class="headPage">Zoro Mapbox</h1>
+      <p></p>
+      <div id="map"></div>
+    </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
@@ -26,11 +29,9 @@
       fetch("data.json")
         .then((res) => res.json())
         .then((json) => {
-
           var markers = json.data.markers;
 
           markers.forEach(function (markerData) {
-
             var typeMark = "marker-1";
             if (markerData.type == 2) {
               typeMark = "marker-2";
@@ -48,16 +49,19 @@
               .setLngLat([markerData.lon, markerData.lat])
               .addTo(map);
 
-            var popup = new mapboxgl.Popup().setHTML(
-              `<h3>${typeMark} Marker Popup</h3><p>This is a ${typeMark} marker.</p>`
-            );
+            var html = `
+            <h3>Zoro popup zoro-${markerData.type}</h3>
+            <p>roronoa zoro</p>
+            <img src="../imgs/${markerData.img}.png"/>
+            `;
+
+            var popup = new mapboxgl.Popup().setHTML(html);
 
             marker.setPopup(popup);
-            
+
             marker.on("click", function () {
               marker.togglePopup();
             });
-
           });
         });
     </script>
