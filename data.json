@@ -9,26 +9,29 @@
       {
         "lon": "108.22760806240348",
         "lat": "16.06130596951281",
-        "name": "indaime",
-        "img": "zoro_01",
-        "desc": "sword indaime kintesu",
-        "type": 1
+        "name": "Wado Ichimonji",
+        "img": "Zoro_01",
+        "desc": "Sword Wado Ichimonji",
+        "type": 1,
+        "info": "Wado Ichimonji: It's Zoro's first sword and a special gift from his childhood friend. <br/>It holds great significance to Zoro as it represents his determination to protect and fulfill his dreams."
       },
       {
         "lon": "108.23760806240348",
         "lat": "16.07130596951281",
-        "name": "sandaime",
-        "img": "zoro_04",
-        "desc": "sword sandaime kintesu",
-        "type": 4
+        "name": "Enma",
+        "img": "Zoro_04",
+        "desc": "Sword Enma",
+        "type": 4,
+        "info": "Enma: Zoro's fifth sword. It once belonged to Kozuki Oden and is one of his two swords. <br/>This sword possesses tremendous power and requires careful control."
       },
       {
         "lon": "108.21760806240348",
         "lat": "16.05930596951281",
-        "name": "jidaime",
-        "img": "zoro_03",
-        "desc": "sword jidaime kintesu",
-        "type": 3
+        "name": "Sandai Kitetsu",
+        "img": "Zoro_03",
+        "desc": "Sword Sandai Kitetsu",
+        "type": 3,
+        "info": "Sandai Kitetsu: One of the Three Great Kitetsu (Supreme-Grade Kitetsu) swords and Zoro's second sword in his collection. <br/>It's believed to be cursed and is an extremely dangerous sword."
       }
     ]
   }

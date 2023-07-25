@@ -48,11 +48,12 @@
             var marker = new mapboxgl.Marker({ element: customIcon })
               .setLngLat([markerData.lon, markerData.lat])
               .addTo(map);
-
+            console.log(markerData);
             var html = `
-            <h3>Zoro popup zoro-${markerData.type}</h3>
-            <p>roronoa zoro</p>
-            <img src="../imgs/${markerData.img}.png"/>
+            <h3 class="popupTtl">Zoro-${markerData.type} ${markerData.name}</h3>
+            <p class="popupDesc">${markerData.desc}</p>
+            <img class="popupImg" src="../imgs/${markerData.img}.png"/>
+            <p class="popupInfo">${markerData.info}</p>
             `;
 
             var popup = new mapboxgl.Popup().setHTML(html);
