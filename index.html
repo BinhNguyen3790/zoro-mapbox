@@ -7,64 +7,33 @@
     <link rel="stylesheet" href="./css/base.css" />
     <script src="/js/tokenmapbox.js"></script>
   </head>
+
   <body>
     <div class="container">
       <h1 class="headPage">Zoro Mapbox</h1>
       <p></p>
-      <div id="map"></div>
+
+      <div class="boxMap">
+        <div id="map"></div>
+  
+        <div class="legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #ff0000"></div>
+            <div>Loại dữ liệu 1</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #00ff00"></div>
+            <div>Loại dữ liệu 2</div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
       rel="stylesheet"
     />
-    <script>
-      mapboxgl.accessToken = token_mapbox;
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-        center: [108.22760806240348, 16.06130596951281], // Thay đổi longitude và latitude tùy theo vị trí mong muốn
-        zoom: 13, // Thay đổi mức zoom tùy theo mong muốn
-      });
-      fetch("data.json")
-        .then((res) => res.json())
-        .then((json) => {
-          var markers = json.data.markers;
-
-          markers.forEach(function (markerData) {
-            var typeMark = "marker-1";
-            if (markerData.type == 2) {
-              typeMark = "marker-2";
-            } else if (markerData.type == 3) {
-              typeMark = "marker-3";
-            } else if (markerData.type == 4) {
-              typeMark = "marker-4";
-            } else if (markerData.type == 5) {
-              typeMark = "marker-5";
-            }
-
-            var customIcon = document.createElement("div");
-            customIcon.className = `mapboxgl-marker ${typeMark}`;
-            var marker = new mapboxgl.Marker({ element: customIcon })
-              .setLngLat([markerData.lon, markerData.lat])
-              .addTo(map);
-            console.log(markerData);
-            var html = `
-            <h3 class="popupTtl">Zoro-${markerData.type} ${markerData.name}</h3>
-            <p class="popupDesc">${markerData.desc}</p>
-            <img class="popupImg" src="../imgs/${markerData.img}.png"/>
-            <p class="popupInfo">${markerData.info}</p>
-            `;
-
-            var popup = new mapboxgl.Popup().setHTML(html);
-
-            marker.setPopup(popup);
-
-            marker.on("click", function () {
-              marker.togglePopup();
-            });
-          });
-        });
-    </script>
+    <script src="./js/common.js"></script>
   </body>
 </html>
