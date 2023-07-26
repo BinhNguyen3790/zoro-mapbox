@@ -32,6 +32,7 @@ img {
 }
 .headPage {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .mapboxgl-marker {
   background-repeat: no-repeat;
@@ -81,4 +82,29 @@ img {
 }
 .popupInfo {
   margin-top: 10px;
+}
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+.legend {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  top: 73px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
