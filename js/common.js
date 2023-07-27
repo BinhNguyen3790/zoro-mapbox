@@ -9,7 +9,8 @@ fetch("data.json")
   .then((res) => res.json())
   .then((json) => {
     var markers = json.data.markers;
-
+    var legends = [];
+    var legendElm = document.querySelector(".legend");
     markers.forEach(function (markerData) {
       var typeMark = "marker-1";
       if (markerData.type == 2) {
@@ -28,6 +29,14 @@ fetch("data.json")
         .setLngLat([markerData.lon, markerData.lat])
         .addTo(map);
       console.log(markerData);
+      var legenElm = `
+          <div class="legend-item">
+            <div class="legend-color">
+              <img src="../imgs/${markerData.img}.png" />
+            </div>
+            <div>${markerData.name}</div>
+          </div>`;
+      legends.push(legenElm);
       var html = `
             <h3 class="popupTtl">Zoro-${markerData.type} ${markerData.name}</h3>
             <p class="popupDesc">${markerData.desc}</p>
@@ -43,4 +52,5 @@ fetch("data.json")
         marker.togglePopup();
       });
     });
+    legendElm.innerHTML = legends.join("");
   });
