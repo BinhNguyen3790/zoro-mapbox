@@ -32,6 +32,24 @@
         "desc": "Sword Sandai Kitetsu",
         "type": 3,
         "info": "Sandai Kitetsu: One of the Three Great Kitetsu (Supreme-Grade Kitetsu) swords and Zoro's second sword in his collection. <br/>It's believed to be cursed and is an extremely dangerous sword."
+      },
+      {
+        "lon": "108.21760806240348",
+        "lat": "16.06930596951281",
+        "name": "Sandai Kitetsu",
+        "img": "Zoro_02",
+        "desc": "Sword Sandai Kitetsu",
+        "type": 2,
+        "info": "Sandai Kitetsu: One of the Three Great Kitetsu (Supreme-Grade Kitetsu) swords and Zoro's second sword in his collection. <br/>It's believed to be cursed and is an extremely dangerous sword."
+      },
+      {
+        "lon": "108.21760806240348",
+        "lat": "16.04530596951281",
+        "name": "Sandai Kitetsu",
+        "img": "Zoro_05",
+        "desc": "Sword Sandai Kitetsu",
+        "type": 5,
+        "info": "Sandai Kitetsu: One of the Three Great Kitetsu (Supreme-Grade Kitetsu) swords and Zoro's second sword in his collection. <br/>It's believed to be cursed and is an extremely dangerous sword."
       }
     ]
   }
