@@ -2,8 +2,8 @@ mapboxgl.accessToken = token_mapbox;
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
-  center: [108.22760806240348, 16.06130596951281], // Thay đổi longitude và latitude tùy theo vị trí mong muốn
-  zoom: 13, // Thay đổi mức zoom tùy theo mong muốn
+  center: [108.22760806240348, 16.06130596951281],
+  zoom: 13,
 });
 fetch("data.json")
   .then((res) => res.json())
@@ -53,4 +53,7 @@ fetch("data.json")
       });
     });
     legendElm.innerHTML = legends.join("");
+  })
+  .catch((err) => {
+    console.log(err);
   });
